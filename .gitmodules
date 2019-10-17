@@ -1,0 +1,3 @@
+[submodule "INASSE"]
+	path = INASSE
+	url = https://github.com/gionji/INASSE
