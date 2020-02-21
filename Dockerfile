@@ -14,4 +14,6 @@ RUN apk add --no-cache --virtual .build-deps \
 
 #CMD [ "python", "./fds/gateway/core/tanzania/test.py","-d 1","-p m" ]
 #CMD [ "python", "./fds/gateway/core/src03/test.py","-d 1","-p m", "-i 1", "--modbus-debug" ]
-CMD [ "python", "./fds/gateway/core/tanzania/test.py","-d 1","-p m", "--modbus-debug" , "-R" ]
+
+# real tanzania
+CMD [ "python", "./fds/gateway/core/tanzania/test.py","-d 10" , "-R" ]

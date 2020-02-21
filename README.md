@@ -8,7 +8,7 @@ docker build -t <NOME_APP> .
 
 ## Run docker
 ```
-docker run --privileged -v /www:/www <NOME_APP> <PATH_APP_DOCKER>
+docker run --restart always --privileged -v /www:/www <NOME_APP> <PATH_APP_DOCKER>
 ```
 
 #Vim tips
