@@ -11,9 +11,10 @@ RUN apk add --no-cache --virtual .build-deps \
     pip install --no-cache-dir -r requirements.txt && \
     apk del .build-deps # delete the .build-deps in the same layer
 
+RUN reset
 
 #CMD [ "python", "./fds/gateway/core/tanzania/test.py","-d 1","-p m" ]
 #CMD [ "python", "./fds/gateway/core/src03/test.py","-d 1","-p m", "-i 1", "--modbus-debug" ]
 
 # real tanzania
-CMD [ "python", "./fds/gateway/core/tanzania/main.py","-d 10" , "-R", "-p", "mc" ]
+CMD ["python", "./fds/gateway/core/tanzania/main.py","-d 10", "-R","-p","mc"]

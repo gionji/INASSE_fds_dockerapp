@@ -10,12 +10,18 @@ docker build -t fds .
 ```
 docker run -it --restart always --privileged -v /www:/www fds
 ```
+## Docker tips
+```
+docker system prune -a
+docker ps -a
+```
 
 #Vim tips
 
 ##Set hard tabs
 ```
 :set autoindent noexpandtab tabstop=4 shiftwidth=4
+```
 
 ## VShow special chars
 ```
