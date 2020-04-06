@@ -3,12 +3,12 @@
 
 ## COmpile docker
 ```
-docker build -t <NOME_APP> .
+docker build -t fds .
 ```
 
 ## Run docker
 ```
-docker run --restart always --privileged -v /www:/www <NOME_APP> <PATH_APP_DOCKER>
+docker run -it --restart always --privileged -v /www:/www fds
 ```
 
 #Vim tips
