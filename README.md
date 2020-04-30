@@ -9,11 +9,16 @@ docker build -t fds .
 ## Run docker
 ```
 docker run -it --restart always --privileged -v /www:/www fds
+--env-file env.list
+
 ```
 ## Docker tips
 ```
 docker system prune -a
 docker ps -a
+
+docker rmi $(docker ps -q)
+
 ```
 
 #Vim tips
